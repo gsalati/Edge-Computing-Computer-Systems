@@ -1,2 +1,2 @@
-# Edge-Computing-Computer-Systems
+# Edge Computing and Computer Systems
 Repositório para compartilhamento de códigos utilizados nas aulas do curso de Engenharia de Software/FIAP POAS
