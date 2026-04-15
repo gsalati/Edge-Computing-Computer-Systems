@@ -9,11 +9,17 @@
 void setup()
 {
   // Setamos o pino LED1 como SAÍDA
-  pinMode(4, OUTPUT);
+  pinMode(LED1, OUTPUT);
 }
 
 void loop()
 {
- uint16_t val = 0;
- val = analogRead(A0);
+  // Escreve o valor HIGH no pino LED1, ligando o led
+  digitalWrite(LED1, HIGH);
+  // Espera o tempo desejado
+  delay(TEMPO_PISCA); 
+  // Escreve o valor lógico LOW no pino LED1, desligando o led
+  digitalWrite(LED1, LOW);
+  // Espera o tempo desejado
+  delay(TEMPO_PISCA); 
 }
