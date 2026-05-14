@@ -2,7 +2,7 @@
 void setup() {
   Serial.begin(9600);
   Serial.println("\n\n---------------------\n");
-  uint8_t value = 15;
+  uint8_t value = 20;
   EEPROM.write(0x0F, value);
 
   Serial.print("Valor: ");

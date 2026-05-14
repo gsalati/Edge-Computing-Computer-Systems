@@ -71,14 +71,21 @@ void loop() {
 /*---------------------------------------------------------------*/
 static void setupTimer1ISR(void)
 {
-      // Modo CTC (WGM12 = 1)
-      TCCR1B |= (1 << WGM12);
+    // Limpa o registrador de controle
+    TCCR1A = 0;
+    TCCR1B = 0;
 
-      //  Prescaler = 64 (CS11 + CS10)
-      TCCR1B |= (1 << CS11) | (1 << CS10);
+    // Zera o contador
+    TCNT1 = 0;
 
-      //  OCR1A = TOP
-      OCR1A = 249;
+    // Modo CTC (WGM12 = 1)
+    TCCR1B |= (1 << WGM12);
+
+    //  Prescaler = 64 (CS11 + CS10)
+    TCCR1B |= (1 << CS11) | (1 << CS10);
+
+    //  OCR1A = TOP
+    OCR1A = 249;
 
 
     // Habilita interrupção de compare A
