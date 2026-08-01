@@ -1,10 +1,15 @@
-/*
-  Wokwi Custom SPI Chip example
-  Exemplo didático SPI com Arduino
-  Baseado em https://wokwi.com/projects/330669951756010068
-  See https://docs.wokwi.com/chips-api/getting-started for more info about custom chips
-*/
-
+/**
+ * @file spi_example.ino
+ * @author Guilherme Salati (profguilherme.salati@fiap.com.br)
+ * @brief 
+ * Exemplo de utilização de SPI com Arduino UNO.
+ * Link para simulação: https://wokwi.com/projects/470821841496905729
+ * @version 0.1
+ * @date 2026-08-01
+ * 
+ * @copyright Copyright (c) 2026
+ * 
+ */
 #include <SPI.h>
 
 #define CS 10

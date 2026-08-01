@@ -1,3 +1,17 @@
+/**
+ * @file arduino_atuador.ino
+ * @author Guilherme Salati (profguilherme.salati@fiap.com.br)
+ * @brief 
+ * Exemplo de utilização de UART com Arduino UNO.
+ * Link para simulação: https://www.tinkercad.com/things/9nBprFaRFLB-exemplouart?sharecode=eGSDaygbS1YVoMxyViTOIvOttjB_2y69xgQnwjnbJxA
+ * @version 0.1
+ * @date 2026-08-01
+ * 
+ * @copyright Copyright (c) 2026
+ * 
+ */
+
+
 #define R 13
 #define G 11
 #define B 12

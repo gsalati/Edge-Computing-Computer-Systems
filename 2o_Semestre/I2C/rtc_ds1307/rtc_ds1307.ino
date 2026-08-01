@@ -18,15 +18,15 @@ void setup() {
   Serial.begin(9600);
   ds1307Begin();
 
-  // Set the RTC once:
+  // Define RTC
   DS1307_Time newTime = {
-    30,   // second
-    45,   // minute
-    14,   // hour (24-hour format)
-    6,    // day of week (1-7)
-    1,    // day
-    8,    // month
-    26    // year (2026 -> 26)
+    30,   // sec
+    45,   // min
+    14,   // hora (formato 24h)
+    6,    // dia da semana (1-7)
+    1,    // dia
+    8,    // mes
+    26    // ano (2026 -> 26)
   };
 
   ds1307WriteTime(newTime);

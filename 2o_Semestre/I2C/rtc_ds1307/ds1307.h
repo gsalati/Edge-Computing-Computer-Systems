@@ -15,7 +15,7 @@ typedef struct  {
   uint8_t year;   // 0-99as
 } DS1307_Time;
 
-// Initialize I2C communication 
+// Inicializa I2C
 void ds1307Begin();
 void ds1307WriteTime(const DS1307_Time &time);
 bool ds1307ReadTime(DS1307_Time &time);
