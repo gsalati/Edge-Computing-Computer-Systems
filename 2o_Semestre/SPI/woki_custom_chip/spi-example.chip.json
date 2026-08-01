@@ -1,0 +1,14 @@
+{
+  "name": "SPI Example",
+  "author": "Guilherme Salati",
+  "pins": [
+    "SCK",
+    "MISO",
+    "MOSI",
+    "CS",
+    "GND",
+    "VCC",
+    "",
+    ""
+  ]
+}
