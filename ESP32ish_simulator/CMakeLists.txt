@@ -12,4 +12,6 @@ src/esp32.cpp
 src/esp32.h
 src/utils/utils.h
 src/utils/utils.cpp
+src/serial/serialMock.cpp
+src/serial/serialMock.h
 )

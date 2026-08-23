@@ -6,6 +6,7 @@
 #include <string>
 #include <cstring>
 #include "serial/serial.h"
+#include "serial/serialMock.h"
 
 using namespace std;
 typedef std::string String;

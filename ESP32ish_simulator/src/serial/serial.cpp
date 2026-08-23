@@ -173,7 +173,6 @@ int SerialCom::readBytes(char* buffer, int length)
     std::lock_guard<std::mutex> lock2(bufferMtx);
 
     if(readBuffer.empty()){
-        cout << "ueh";
         return 0;
     }
     for(i = 0; i <= length; i++)
