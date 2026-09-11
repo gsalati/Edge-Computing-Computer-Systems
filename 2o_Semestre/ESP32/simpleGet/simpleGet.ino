@@ -3,7 +3,9 @@
 #include <ArduinoJson.h>
 
 const char* ssid = "GSALATI_NOTE";
+// cons char* ssid = "Wokwi-GUEST"
 const char* password = "Fiap2026!";
+// const char* password = "";
 
 const char* endPoint = "http://api.open-notify.org/iss-now.json";
 
