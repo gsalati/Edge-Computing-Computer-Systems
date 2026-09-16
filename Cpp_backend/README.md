@@ -133,6 +133,9 @@ servidor HTTP.
 Os diretórios e arquivos dentro de `build/` são gerados pelo CMake e não fazem
 parte do código-fonte principal.
 
+### `house_of_the_dragon.json`
+Collection para o Postman com exemplo de requisições.
+
 
 
 ## Build & Run

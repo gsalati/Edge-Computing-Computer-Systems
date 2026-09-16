@@ -1,0 +1,119 @@
+{
+  "info": {
+    "_postman_id": "d92d2eac-5a42-413a-bc47-b17eef0274d1",
+    "name": "Cpp-Backend",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "41723824"
+  },
+  "item": [
+    {
+      "name": "Caraxes",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nome\": \"Caraxes\",\r\n    \"montador\": \"Daemon Targaryen\",\r\n    \"idade\": 80,\r\n    \"tamanho\": 75.8\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/dragoes",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "dragoes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Syrax",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nome\": \"Syrax\",\r\n    \"montador\": \"Rhaenyra Targaryen\",\r\n    \"idade\": 38,\r\n    \"tamanho\": 52.9\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/dragoes",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "dragoes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "helloFiap",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/helloFiap",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "helloFiap"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Dragoes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/dragoes",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "dragoes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Dragao from Id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/dragoes/3",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "dragoes",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
