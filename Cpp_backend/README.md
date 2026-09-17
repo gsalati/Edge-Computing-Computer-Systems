@@ -13,8 +13,7 @@ JSON.
 ## Visão geral
 
 O programa é iniciado pela função `main`, que cria um servidor
-`httplib::Server`, registra as rotas e escuta na porta `8080`, em todos os
-v
+`httplib::Server`, registra as rotas e escuta na porta `8080`.
 Rotas disponíveis:
 
 | Método | Rota | Descrição |
@@ -146,6 +145,12 @@ Em um sistema _Linux_, certifique-se que o cmake está instalado
 sudo apt install cmake
 ```
 
+Realize o clone desse repositório e navegue até a pasta do projeto "Cpp_backend"
+```bash
+git clone https://github.com/gsalati/Edge-Computing-Computer-Systems
+cd Edge-Computing-Computer-Systems/Cpp_backend
+```
+
 Execute os seguintes comandos:
 
 ```bash
@@ -159,6 +164,7 @@ Para um clean build
 cmake --build build --clean-first
 ```
 
+O executável estará disponível no diretório _build_.
 ### Run:
 Para executar, execute:
 ```bash
