@@ -5,5 +5,6 @@
 #include "../serial/serial.h"
 
 void delay(int ms);
+unsigned long millis(void);
 
 #endif
