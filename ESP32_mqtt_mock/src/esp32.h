@@ -7,6 +7,7 @@
 #include <cstring>
 #include "serial/serial.h"
 #include "serial/serialMock.h"
+#include "mqtt/mqtt.h"
 
 using namespace std;
 typedef std::string String;

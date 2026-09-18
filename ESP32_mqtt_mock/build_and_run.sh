@@ -7,4 +7,4 @@ cmake --build build --clean-first
 
 echo "Running..."
 
-./build/ESP32ish
+./build/ESP32Mock

@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-add_executable(ESP32ish 
+add_executable(ESP32Mock
 src/main.cpp 
 src/serial/serial.cpp
 src/esp32.cpp
@@ -14,4 +14,12 @@ src/utils/utils.h
 src/utils/utils.cpp
 src/serial/serialMock.cpp
 src/serial/serialMock.h
+src/mqtt/mqtt.cpp
+src/mqtt/mqtt.h
+)
+
+target_link_libraries(ESP32Mock
+    PRIVATE
+    paho-mqttpp3
+    paho-mqtt3as
 )

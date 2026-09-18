@@ -1,0 +1,11 @@
+Paho MQTT dependency attribution
+
+Eclipse Paho MQTT C client library, version 1.3.14
+https://github.com/eclipse-paho/paho.mqtt.c
+
+Eclipse Paho MQTT C++ client library, version 1.5.2
+https://github.com/eclipse-paho/paho.mqtt.cpp
+
+Copyright notices and license files are included in the source distributions
+fetched by CMake. See paho-mqtt.LICENSE for the applicable license names and
+upstream license text locations.

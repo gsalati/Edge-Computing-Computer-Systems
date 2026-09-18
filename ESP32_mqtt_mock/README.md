@@ -1,18 +1,29 @@
 # ESP32ish Simulator
 
-"Simulacro" de ESP32 para utilização nas aulas de Edge Computing (FIAP/POA).
+Mock de ESP32 (Serial e MQTT) para utilização nas aulas de Edge Computing (FIAP/POA).
 
-Esse simulador expõe algumas funções da biblioteca serial e da biblioteca de MQTT (em breve) do Arduino/ESP32 para utiização em aula.
+Esse simulador expõe algumas funções da biblioteca serial e da biblioteca PubSubClient(MQTT) do Arduino/ESP32 para utiização em aula.
 
 ## Utilização
 
 Edite o software no arquivo [esp32.cpp](src/esp32.cpp). Utilize a função função setup e a função loop "normalmente".
+
 Esse simulador implementa as funções da API do arduino listadas:
 + Serial.begin
 + Serial.available
 + Serial.readBytes(char* buffer, int length)
 + Serial.writeBytes(char* data, int length);
 + delay(int ms)
+
+E as funções da bibliotea PubSubClient:
++ void setServer(const char * Domain, uint16_t Port);
++ void setCallback(std::function<void(const char*, uint8_t*, unsigned int)> Callback);
++ bool connected();
++ bool connect(const char* id);
++ void disconnect();
++ bool subscribe(const char* topic);
++ bool publish(const char* topic, const char* payload);
++ void loop();
 
 ### Para utilização com comunicação com Arduino
 No arquivo [esp32.cpp](src/esp32.cpp), utilize a iniciallização do objeto Serial com a classe SerialCom
@@ -60,12 +71,17 @@ Serial.begin('s'); // Para formato de texto
 
 ## Build & Run
 
+
+
 ### Build
 Em um sistema _Linux_, certifique-se que o cmake está instalado
 ```bash
 sudo apt install cmake
 ```
-
+Após, instale o pacote MQTT-PAHO utilizado no software:
+```bash
+sudo apt install libpaho-mqtt-dev libpaho-mqttpp-dev
+```
 Execute os seguintes comandos:
 
 ```bash
@@ -82,5 +98,5 @@ cmake --build build --clean-first
 ### Run:
 Para executar, execute:
 ```bash
-sudo ./build/ESP32ish
+sudo ./build/ESP32Mock
 ```

@@ -1,0 +1,13 @@
+Eclipse Paho MQTT C and C++ client libraries
+
+The Paho MQTT C and C++ client libraries are made available under the
+Eclipse Public License v2.0 and Eclipse Distribution License v1.0.
+
+The complete license texts are available from the upstream distributions:
+
+https://github.com/eclipse-paho/paho.mqtt.c/blob/v1.3.14/epl-v20
+https://github.com/eclipse-paho/paho.mqtt.c/blob/v1.3.14/edl-v10
+
+This project obtains these libraries at configure time through CMake
+FetchContent. The files and copyright notices in the fetched distributions
+remain subject to their upstream licenses.
