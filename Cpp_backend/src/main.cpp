@@ -17,7 +17,7 @@
 
 /*
 * Em um software C/C++ o ponto de entrada do software é a função main.
-* i.e. a execução do software começa a partir da mãe.
+* i.e. a execução do software começa a partir da main.
 * Observe que a função tem um retorno tipo int. 
 * Finalização "normal" do programa deve retornar 0.
 * Finalizações anormais são finalizadas com valores diferentes de 0.
