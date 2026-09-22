@@ -74,9 +74,11 @@ Serial.begin('s'); // Para formato de texto
 
 
 ### Build
-Em um sistema _Linux_, certifique-se que o cmake está instalado
+Em um sistema _Linux_, certifique-se que o cmake está instalado. Se necessário, instale
 ```bash
+sudo apt upgrade
 sudo apt install cmake
+sudo apt install build-essential
 ```
 Após, instale o pacote MQTT-PAHO utilizado no software:
 ```bash
