@@ -140,9 +140,12 @@ Collection para o Postman com exemplo de requisições.
 ## Build & Run
 
 ### Build
-Em um sistema _Linux_, certifique-se que o cmake está instalado
+Em um sistema _Linux_, certifique-se que o cmake está instalado.
+Se necessário, instale
 ```bash
+sudo apt upgrade
 sudo apt install cmake
+sudo apt install build-essential
 ```
 
 Realize o clone desse repositório e navegue até a pasta do projeto "Cpp_backend"

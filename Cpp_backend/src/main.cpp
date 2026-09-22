@@ -32,7 +32,7 @@ int main(int argc, char* argv[])
     std::cout << "Print do número sete: " << olaInteiro << "\n";
     */
 
-    std::cout << "\n------------- INICIANDO HTTP SERVER E CLIENT ---------\n";
+    std::cout << "\n------------- INICIANDO HTTP SERVER ---------\n";
 
     httplib::Server svr;
 
