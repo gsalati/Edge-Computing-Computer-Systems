@@ -1,6 +1,7 @@
 #include "registroDragoes.h"
 
 #include <fstream>
+#include <sstream>
 #include <string>
 
     const char* ARQUIVO_DRAGOES = "dragoes.csv";
