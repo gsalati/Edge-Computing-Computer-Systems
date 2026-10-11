@@ -14,6 +14,7 @@ Esse simulador implementa as funções da API do arduino listadas:
 + Serial.readBytes(char* buffer, int length)
 + Serial.writeBytes(char* data, int length);
 + delay(int ms)
++ millis(void)
 
 E as funções da bibliotea PubSubClient:
 + void setServer(const char * Domain, uint16_t Port);
@@ -50,9 +51,13 @@ winget install usbipd
 2. Utilizando o *powershell* como adminsitrador.Adicione o dispositivo (Arduino) conectado ao WSL2:
 ```bash
 usbipd list
+```
+```bash
 usbipd bind --busid=<BUSID>
 usbipd attach --wsl --busid=<BUSID>
 ```
+_`<BUSID>`_ deve ser o identificador listado no comando list.
+
 Pronto! Agora o dispostivo deve ser listado normalmente dentro do WSL2.
 
 ### Para utilização SEM comunicação com Arduino
@@ -69,9 +74,10 @@ Serial.begin('h'); // Para formato hexadecimal
 Serial.begin('s'); // Para formato de texto
 ```
 
+## Exemplo inicial
+A implementação esp32.cpp inicial do repositório pode ser utilizada em conjunto com o [exemplo de escrita e leitura](2o_Semestre/UART/escreve_e_espera_resposta/writeWaitRead.ino). Nesse exemplo, um dispositivo conectado na USB (Arduino) envia um valor e aguarda uma confirmação. O simulador de ESP32 recebe esse valor e publica em um tópico do MQTT e envia a confirmação conforme resultado do _MQTT Publish_
+
 ## Build & Run
-
-
 
 ### Build
 Em um sistema _Linux_, certifique-se que o cmake está instalado. Se necessário, instale
