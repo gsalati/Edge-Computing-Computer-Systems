@@ -110,11 +110,6 @@ Referência: [Configuração do projeto Wokwi
 
 Crie `diagram.json` na raiz do projeto, junto de `wokwi.toml`. Copie o conteúdo do arquivo `diagram.json` presente no simulador online do Wokwi.
 
-
-Referências: - [Repositório oficial do
-gateway](https://github.com/wokwi/wokwigw) - [Guia de Wi-Fi do ESP32 no
-Wokwi](https://docs.wokwi.com/guides/esp32-wifi)
-
 ## 8. Compilar e iniciar a simulação
 
 1.  Abra o terminal integrado do VS Code (**Terminal → New Terminal**).
