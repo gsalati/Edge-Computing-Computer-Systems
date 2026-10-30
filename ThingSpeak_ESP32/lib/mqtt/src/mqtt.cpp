@@ -14,9 +14,10 @@ const char* topicPrefix = "exemplo001";
 const char* mqtt_server = "mqtt3.thingspeak.com";
 const int mqtt_port = 1883;
 
-const char* mqtt_client_id = "JCApOBASPC8DCSM6MwcbDDk";
-const char* mqtt_username = "JCApOBASPC8DCSM6MwcbDDk";
-const char* mqtt_password = "VjgF/Lp55TRnQmMck6NKAuD/";
+const char* mqtt_client_id = "GR4wDCsSPDMNMRE2OyI0GzA";
+const char* mqtt_username = "GR4wDCsSPDMNMRE2OyI0GzA";
+const char* mqtt_password = "Jr7jVMlyhxStpqIWO0VqIzoo";
+
 
 // ID numérico do canal ThingSpeak
 const unsigned long channelID = 3543455;
