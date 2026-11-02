@@ -2,13 +2,7 @@
 #include <WiFi.h>
 #include "control.h"
 
-const char* topic_subscribe_cmd = "/TEF/exemplo001/cmd";
-const char* topic_publish_attrs = "/TEF/exemplo001/attrs";
-const char* topic_publish_temp = "TEF/exemplo001/attrs/t";
-const char* topic_publish_hum = "TEF/exemplo001/attrs/h";
-const char* default_ID_MQTT = "fiware_001";
 
-const char* topicPrefix = "exemplo001";
 
 // ThingSpeak MQTT
 const char* mqtt_server = "mqtt3.thingspeak.com";
